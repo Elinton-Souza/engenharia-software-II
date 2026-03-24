@@ -1,0 +1,92 @@
+# Atividade prática 01 - Versionamento básico local
+
+### Atividade Prática: Versionamento local de um Projeto Simples com Git
+
+**Objetivo:** Criar e versionar localmente um projeto simples em JavaScript utilizando Git.
+
+**Passos:**
+
+1. **Configuração Inicial do Git**
+    - Abra o terminal e configure seu usuário no Git:
+        
+        ```bash
+        git config --global user.name "Seu Nome"
+        git config --global user.email "seuemail@exemplo.com"
+        ```
+        
+2. **Criar o Projeto**
+    - Crie uma pasta para o seu projeto:
+        
+        ```bash
+        mkdir projeto-simples
+        cd projeto-simples
+        ```
+        
+    - Dentro dessa pasta, crie um arquivo `index.js` e adicione o seguinte código JavaScript simples:
+        
+        ```jsx
+        console.log("Hello, Git!");
+        ```
+        
+3. **Inicializar um Repositório Git**
+    - Inicialize um repositório Git na pasta do projeto:
+        
+        ```bash
+        git init
+        ```
+        
+4. **Verificar o Status do Repositório**
+    - Confira o status do repositório para ver quais arquivos foram criados e ainda não estão sendo versionados:
+        
+        ```bash
+        git status
+        ```
+        
+5. **Adicionar Arquivos ao Versionamento**
+    - Adicione o arquivo `index.js` ao controle de versão:
+        
+        ```bash
+        git add index.js
+        ```
+        
+6. **Criar um Commit**
+    - Faça o primeiro commit do projeto:
+        
+        ```bash
+        git commit -m "Primeiro commit - adiciona o arquivo index.js"
+        ```
+        
+7. **Adicione uma dependência**
+    - Instale a dependência do **prompt-sync** no projeto
+        
+        ```bash
+        npm i prompt-sync
+        ```
+        
+    
+8. **Adicionar um `.gitignore`**
+    - Crie um arquivo `.gitignore` na pasta do projeto e adicione o nome de algum arquivo ou pasta que você deseja ignorar no versionamento (exemplo: `node_modules/`).
+    - Confira o status para garantir que o `.gitignore` foi criado corretamente:
+        
+        ```bash
+        git status
+        ```
+        
+9. **Commit do `.gitignore`**
+    - Adicione o `.gitignore` ao versionamento e crie um novo commit:
+        
+        ```bash
+        git add .gitignore
+        git commit -m "Adiciona o arquivo .gitignore"
+        ```
+        
+10. **Commit a dependência do prompt-sync**
+    - Adicione o arquivo de dependencias e o consolide:
+    
+    ```bash
+    git add .
+    git commit -m "Adiciona prompt-sync"
+    ```
+    
+11. **Consultar Ajuda**
+    - Utilize o comando `git help` para explorar outras funcionalidades do Git e aprender mais comandos que podem ser úteis no futuro.
